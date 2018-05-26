@@ -1,0 +1,26 @@
+{
+  "name": "autodeploy-node",
+  "version": "1.0.0",
+  "description": "deploy node js service(listen deploy endpoint and run deploy.sh)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/zmts/deploy-node.git"
+  },
+  "author": "Sasha Zmts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/zmts/autodeploy-node/issues"
+  },
+  "homepage": "https://gitlab.com/zmts/autodeploy-node#README",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {}
+}

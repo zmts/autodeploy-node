@@ -1,0 +1,10 @@
+{
+  "name" : "supersite-api",
+  "script": "/var/www/superite.com/supersite-api/www/bin",
+  "instances": 1,
+  "max_memory_restart": "1G",
+  "interpreter_args": "--use_strict",
+  "env_production": {
+    "NODE_ENV": "production"
+  }
+}

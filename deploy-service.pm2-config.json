@@ -1,0 +1,10 @@
+{
+  "name" : "deploy-service",
+  "script": "/var/www/deploy.supersite.com/autodeploy-node/index.js",
+  "instances": 1,
+  "max_memory_restart": "200M",
+  "interpreter_args": "--use_strict",
+  "env_production": {
+    "NODE_ENV": "production"
+  }
+}
