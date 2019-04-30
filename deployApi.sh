@@ -9,8 +9,12 @@ PM2_CONFIG=/var/www/deploy.supersite.com/autodeploy-node/supersite-api.pm2-confi
 
 set -x
 
-echo 'pull latest code'
 cd $APP_DIR
+echo 'remove node_modules'
+rm -r -f ./node_modules
+
+echo 'pull latest code'
+git reset --hard
 git pull
 
 echo 'install dependencies'
